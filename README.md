@@ -1,23 +1,33 @@
 # 🖥️ Log File Analyzer
 
-A beginner-friendly Python project that analyzes application log files, counts event types, and identifies errors using a desktop GUI or terminal interface.
+A beginner-friendly Python project that analyzes application log files, counts event types, and identifies errors. It includes a desktop graphical interface and a terminal-based version.
 
 ## ✨ Features
 
 - 🪟 Desktop GUI built with Tkinter
 - 📂 Open and analyze `.log` and `.txt` files
-- 📊 Count `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL` events
+- 📊 Count DEBUG, INFO, WARNING, ERROR, and CRITICAL events
 - 🚨 Display error and critical event details
 - 💾 Save analysis reports as text files
-- 💻 Terminal-based analysis using Python
+- 💻 Run the analyzer directly from the terminal
+
+## 🖼️ Screenshots
+
+### Application Interface
+
+![Log File Analyzer GUI](screenshots/GUI.png)
+
+### Log Analysis Results
+
+![Log Analysis Results](screenshots/Analysis.png)
 
 ## 🛠️ Technologies Used
 
-- **Python 3**
+- **Python 3** — core programming language
 - **Tkinter** — desktop graphical interface
-- **Regular Expressions (`re`)** — detect log event types
+- **Regular Expressions (`re`)** — identify log event types
 - **Counter** — count event categories
-- **Git & GitHub** — version control and project hosting
+- **Git and GitHub** — version control and project hosting
 
 ## 📁 Project Structure
 
@@ -28,15 +38,21 @@ log-file-analyzer/
 ├── application.log
 ├── README.md
 ├── .gitignore
-└── report.txt
+└── screenshots/
+    ├── GUI.png
+    └── Analysis.png
 ```
 
-- `app.py` — desktop graphical interface
-- `main.py` — terminal-based analyzer
-- `application.log` — sample log file
-- `README.md` — project documentation
-- `.gitignore` — files Git should ignore
-- `report.txt` — generated analysis report, if present
+### File Description
+
+| File | Purpose |
+|---|---|
+| `app.py` | Desktop GUI version |
+| `main.py` | Terminal-based version |
+| `application.log` | Sample input log file |
+| `README.md` | Project documentation |
+| `.gitignore` | Excludes temporary files |
+| `screenshots/` | Application screenshots |
 
 ## ⚙️ Requirements
 
@@ -45,7 +61,7 @@ log-file-analyzer/
 
 No third-party Python packages are required.
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 
@@ -54,13 +70,13 @@ git clone https://github.com/vrushabhakamdi-dev/log-file-analyzer.git
 cd log-file-analyzer
 ```
 
-### 2. Launch the desktop GUI
+### 2. Run the desktop application
 
 ```bash
 python app.py
 ```
 
-Click **Open & Analyze Log**, select your log file, and review the results. Click **Save Report** to export the analysis.
+Click **Open & Analyze Log**, select a `.log` or `.txt` file, and view the results. Click **Save Report** to save the analysis.
 
 ### 3. Run the terminal version
 
@@ -68,7 +84,7 @@ Click **Open & Analyze Log**, select your log file, and review the results. Clic
 python main.py
 ```
 
-Make sure `application.log` is in the project folder if your terminal script expects that filename.
+Make sure `application.log` is present in the project directory if the terminal script expects that filename.
 
 ## 📋 Example Log Entries
 
@@ -78,7 +94,7 @@ Make sure `application.log` is in the project folder if your terminal script exp
 2026-10-10 09:03:30 ERROR Database connection failed
 ```
 
-The analyzer identifies event types, counts them, and displays error details.
+The analyzer identifies the event types, counts them, and displays error details.
 
 ## 🎯 What I Learned
 
@@ -87,11 +103,11 @@ The analyzer identifies event types, counts them, and displays error details.
 - Counting and categorizing log events
 - Building desktop applications with Tkinter
 - Generating text reports
-- Using Git and GitHub
+- Managing code with Git and GitHub
 
 ## 🔮 Future Improvements
 
-- Filter logs by date and severity
+- Filter logs by severity and date
 - Add charts and visual analytics
 - Search for specific log messages
 - Export reports to CSV
@@ -105,4 +121,4 @@ GitHub: [@vrushabhakamdi-dev](https://github.com/vrushabhakamdi-dev)
 
 ## 📄 License
 
-This project is open source. A license has not yet been specified.
+No license has been specified yet.
